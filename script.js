@@ -1,28 +1,26 @@
 //JS file to combine all code that needs to be shared across pages
 //home.html
-var width = 9.19;
+var width = 0;
 var points = 0;
-var isChecked = false;
+
 
 function moveBar() {
 	var elem = document.getElementById("bar-fill");
 	var myCheck = document.getElementById("done1");
 	var myCheck2 = document.getElementById("done2");
-
-	if (width < 919) {
+	
+	if (width < 100) {
 		if (myCheck.checked) {
-			width += 18.38;
+			width += 1;
 			points += 10;
+			elem.style.width = width + '%'
 			elem.innerHTML = "" + points;
+	
 		}
 	}
 };
 
-function smallredeem() {
-	var smallrd = document.getElementById("small-reward-button")
-	width -= 100;
-	points -= 100;
-};
+    
 //goals.js
 
 //rewards.js
@@ -106,8 +104,4 @@ function toggleGrandRewardPopup() {
 			.removeAttribute("href");
 
 	}
-};
-
-function goToRewards() {
-	window.location.replace("rewards.html")
 };
