@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<link rel="stylesheet" href="styles.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+		<script src="login.js"></script>
+		<script scr="script.js"></script>
+	</head>
+
+	<body class="background">
+
+
+		<div class="nav-bar">
+			<a href="home.html"><button>Home</button></a>
+			<a href="goals.html"><button>Goals</button></a>
+			<a href="rewards.html"><button>Rewards</button></a>
+			<button onClick="logout()">Sign Out</button>
+		</div>
+
+
+		<div class="home">
+			<h1 id="hello"> Hello 👋 </h1>
+		
+
+			<div id="progress-bar">
+				<div id="bar-fill"></div>
+
+			</div>
+			<div id="reward-buttons">
+				<button onclick="toggleSmallRewardPopup()">Small Reward</button>
+				<button onclick="toggleMediumRewardPopup()">Medium Reward</button>
+				<button onclick="toggleGrandRewardPopup()">Grand Reward</button>
+			</div>
+		</div>
+
+
+		<div class="to-do_list">
+			<div id="to-do"></div>
+			<input type="checkbox" class="done" id="done1" onClick="moveBar();">
+			<label class= "done">Done</label>
+			<div id="to-do"></div>
+			<input type="checkbox" class="done" id="done2" onClick="moveBar()">
+			<label class= "done">Done</label>
+			<div id="to-do"></div>
+			<input type="checkbox" class="done" id="done3" onClick="moveBar()">
+			<label class= "done">Done</label>
+			<div id="to-do"></div>
+			<input type="checkbox" class="done" id="done4" onClick="moveBar()">
+			<label class= "done">Done</label>
+			<div id="to-do"></div>
+			<input type="checkbox" class="done" id="done5" onClick="moveBar()">
+			<label class= "done">Done</label>
+			<div id="to-do"></div>
+			<input type="checkbox" class="done" id="done6" onClick="moveBar()">
+			<label class= "done">Done</label>
+
+		</div>
+
+		<div class="reward-message" id="small-reward-message">
+			<div class="overlay"></div>
+			<div class="content">
+				<div class="close-btn" onclick="toggleSmallRewardPopup()">×</div>
+				<h1>SMALL REWARD</h1>
+				<p class="reward-points">100 points</p>
+				<p id="small-reward-text" class="dayly-task">Award not available</p>
+				<a id="small-reward-button-link" href="rewards.html"><button id="small-reward-button">Go to Rewards</button></a>
+			</div>
+		</div>
+
+
+		<div class="reward-message" id="medium-reward-message">
+			<div class="overlay"></div>
+			<div class="content">
+				<div class="close-btn" onclick="toggleMediumRewardPopup()">×</div>
+				<h1>MEDIUM REWARD</h1>
+				<p class="reward-points">500 points</p>
+				<p id="medium-reward-text" class="dayly-task">Award not available</p>
+				<a id="medium-reward-button-link" href="rewards.html"><button id="medium-reward-button">Go to Rewards</button></a>
+
+			</div>
+
+		</div>
+
+		<div class="reward-message" id="grand-reward-message">
+			<div class="overlay"></div>
+			<div class="content">
+				<div class="close-btn" onclick="toggleGrandRewardPopup()">×</div>
+				<h1>GRAND REWARD</h1>
+				<p class="reward-points">500 points</p>
+				<p id="grand-reward-text" class="dayly-task">Award not available</p>
+				<a id="grand-reward-button-link" href="rewards.html"><button id="grand-reward-button">Go to Rewards</button></a>
+
+			</div>
+		</div>
+		<script src="script.js"></script>
+
+
+	</body>
+
+</html>
